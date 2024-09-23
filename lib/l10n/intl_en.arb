@@ -1,5 +1,11 @@
 {
     "payment":"Payment",
     "receipt_details":"Receipt Details",
-    "general_consultation_type":"General Consultation Type"
+    "general_consultation_type":"General Consultation Type",
+    "sub_type_of_consultation":"Sub-type of consultation",
+    "payment_confirmation":"payment confirmation",
+    "wallet_balance":"Wallet balance",
+    "electronic_payment_card":"Electronic payment card",
+    "add_new_card":"+ add new card",
+    "electronic_wallet":"Electronic wallet"
 }

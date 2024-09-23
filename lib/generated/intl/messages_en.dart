@@ -22,10 +22,20 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add_new_card": MessageLookupByLibrary.simpleMessage("+ add new card"),
+        "electronic_payment_card":
+            MessageLookupByLibrary.simpleMessage("Electronic payment card"),
+        "electronic_wallet":
+            MessageLookupByLibrary.simpleMessage("Electronic wallet"),
         "general_consultation_type":
             MessageLookupByLibrary.simpleMessage("General Consultation Type"),
         "payment": MessageLookupByLibrary.simpleMessage("Payment"),
+        "payment_confirmation":
+            MessageLookupByLibrary.simpleMessage("payment confirmation"),
         "receipt_details":
-            MessageLookupByLibrary.simpleMessage("Receipt Details")
+            MessageLookupByLibrary.simpleMessage("Receipt Details"),
+        "sub_type_of_consultation":
+            MessageLookupByLibrary.simpleMessage("Sub-type of consultation"),
+        "wallet_balance": MessageLookupByLibrary.simpleMessage("Wallet balance")
       };
 }

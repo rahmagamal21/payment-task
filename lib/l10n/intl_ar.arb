@@ -1,5 +1,11 @@
 {
     "payment":"الدفع",
     "receipt_details":"تفاصيل الفاتورة",
-    "general_consultation_type":"نوع الاستشارة العام"
+    "general_consultation_type":"نوع الاستشارة العام",
+    "sub_type_of_consultation":"نوع الاستشارة الفرعي",
+    "payment_confirmation":"تاكيد الدفع",
+    "wallet_balance":"رصيد المحفظة",
+    "electronic_payment_card":"بطاقة الدفع الالكتروني",
+    "add_new_card":"+ اضافة بطاقة جديدة",
+    "electronic_wallet":"المحفظة الالكترونية"
 }

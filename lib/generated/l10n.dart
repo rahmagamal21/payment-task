@@ -79,6 +79,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Sub-type of consultation`
+  String get sub_type_of_consultation {
+    return Intl.message(
+      'Sub-type of consultation',
+      name: 'sub_type_of_consultation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `payment confirmation`
+  String get payment_confirmation {
+    return Intl.message(
+      'payment confirmation',
+      name: 'payment_confirmation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wallet balance`
+  String get wallet_balance {
+    return Intl.message(
+      'Wallet balance',
+      name: 'wallet_balance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Electronic payment card`
+  String get electronic_payment_card {
+    return Intl.message(
+      'Electronic payment card',
+      name: 'electronic_payment_card',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `+ add new card`
+  String get add_new_card {
+    return Intl.message(
+      '+ add new card',
+      name: 'add_new_card',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Electronic wallet`
+  String get electronic_wallet {
+    return Intl.message(
+      'Electronic wallet',
+      name: 'electronic_wallet',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
