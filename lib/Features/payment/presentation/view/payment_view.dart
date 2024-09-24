@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:payment/Features/payment/widgets/payment_methods.dart';
-import 'package:payment/Features/payment/widgets/price_button.dart';
+import 'package:payment/Features/payment/presentation/view/widgets/payment_methods.dart';
+import 'package:payment/Features/payment/presentation/view/widgets/price_button.dart';
 import 'package:svg_flutter/svg.dart';
 
-import '../../../core/common/res/colors.dart';
-import '../../../generated/l10n.dart';
-import '../widgets/confirmatio_button.dart';
-import '../widgets/details_row.dart';
+import '../../../../core/common/res/colors.dart';
+import '../../../../generated/l10n.dart';
+import 'widgets/confirmatio_button.dart';
+import 'widgets/details_row.dart';
 
 class PaymentView extends StatelessWidget {
   const PaymentView({super.key});

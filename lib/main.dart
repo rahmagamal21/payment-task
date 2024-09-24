@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:payment/Features/payment/view/payment_view.dart';
+import 'package:payment/Features/payment/presentation/controller/payment/payment_bloc.dart';
+import 'package:payment/Features/payment/presentation/view/payment_view.dart';
 
+import 'Features/payment/domain/use case/payment_use_case.dart';
+import 'core/common/service/injection.dart';
 import 'generated/l10n.dart';
 
 void main() {
+  configureDependencies();
   runApp(const MyApp());
 }
 
@@ -27,7 +32,11 @@ class MyApp extends StatelessWidget {
           supportedLocales: S.delegate.supportedLocales,
           locale: const Locale('ar'),
           debugShowCheckedModeBanner: false,
-          home: const PaymentView(),
+          home: BlocProvider(
+            create: (context) => PaymentBloc(
+                processPaymentUseCase: getIt.get<ProcessPaymentUseCase>()),
+            child: const PaymentView(),
+          ),
         );
       },
     );
