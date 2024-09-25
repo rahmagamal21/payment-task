@@ -34,7 +34,8 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           home: BlocProvider(
             create: (context) => PaymentBloc(
-                processPaymentUseCase: getIt.get<ProcessPaymentUseCase>()),
+              processPaymentUseCase: getIt.get<ProcessPaymentUseCase>(),
+            ),
             child: const PaymentView(),
           ),
         );

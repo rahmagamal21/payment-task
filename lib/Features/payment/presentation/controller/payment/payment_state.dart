@@ -6,8 +6,8 @@ part 'payment_state.freezed.dart';
 
 @freezed
 class PaymentState with _$PaymentState {
-  const factory PaymentState.initial() = _Initial;
-  const factory PaymentState.loading() = _Loading;
-  const factory PaymentState.success(PaymentKey paymentKey) = _Success;
-  const factory PaymentState.failure(String error) = _Failure;
+  const factory PaymentState.initial() = Initial;
+  const factory PaymentState.loading() = Loading;
+  const factory PaymentState.success(PaymentKey paymentKey) = Success;
+  const factory PaymentState.failure(String error) = Failure;
 }

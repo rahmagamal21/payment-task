@@ -1,8 +1,5 @@
-import 'package:dartz/dartz.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
-import '../../../../../core/error/failure.dart';
-import '../../../domain/entity/payment_entity.dart';
 import '../../../domain/use case/payment_use_case.dart';
 import 'payment_event.dart';
 import 'payment_state.dart';
@@ -19,7 +16,7 @@ class PaymentBloc extends Bloc<PaymentEvent, PaymentState> {
   Future<void> _onProcessPayment(
       ProcessPayment event, Emitter<PaymentState> emit) async {
     emit(const PaymentState.loading());
-    final Either<Failure, PaymentKey> failureOrPaymentKey =
+    final failureOrPaymentKey =
         (await processPaymentUseCase(event.order));
 
     failureOrPaymentKey.fold(

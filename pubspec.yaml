@@ -50,6 +50,7 @@ dependencies:
   retrofit: ^4.4.1
   shared_preferences: ^2.3.2
   svg_flutter: ^0.0.1
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   build_runner: ^2.4.12
