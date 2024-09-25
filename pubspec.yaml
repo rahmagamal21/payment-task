@@ -39,6 +39,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_screenutil: ^5.9.3
+  flutter_secure_storage: ^9.2.2
   freezed_annotation: ^2.4.4
   get_it: ^7.7.0
   injectable: ^2.4.4
@@ -47,6 +48,7 @@ dependencies:
   json_annotation: ^4.9.0
   logging: ^1.2.0
   paymob_payment: ^0.0.1+1
+  provider: ^6.1.2
   retrofit: ^4.4.1
   shared_preferences: ^2.3.2
   svg_flutter: ^0.0.1
